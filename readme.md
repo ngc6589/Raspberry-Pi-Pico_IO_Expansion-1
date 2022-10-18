@@ -35,6 +35,10 @@ ADC_VREF は 3V3
 |GPIO14|19|22|GPIO17|
 |GPIO15|20|21|GPIO16|
 
+# 回路図・ガーバーファイル
+回路図は Schematic.pdf を参照してください。  
+ガーバーファイルは 20221002.zip を参照してください。
+
 # Pico Probe 接続
 基板端の U2 は Pico Probe の Raspberry Pi Pico が実装される場所です。gdb でデバッグをする時は実装してください。  
 Pico Probe は使用しないけど、刺したまま使用するときは基板の JP1 ～ JP4 のジャンパーピンを抜くことで分離できます。
@@ -45,9 +49,14 @@ VSYS は USB コネクタの VBUS からショットキーバリアダイオー�
   
 3V3 はターゲット Raspberry Pi Pico の 3V3 端子から供給されます。Raspberry Pi Pico の基板に 3.3V DC/DC コンバーターが搭載されていますが、Raspberry Pi Pico Datasheet の記載には、3V3 のピンは 300mA 以下推奨とあります。
 
-# 部品表
+# 組み立て例
+![expansionBoard](./Material/expansionBoard-2.jpg)
 
+組み立て例は、Raspberry Pi Pico ボードをピンソケットで、横の I/O をピンヘッダーで出しました。
 
+# 部品例
+
+上記組み立て例の部品表は以下のようになります。
 
 |部品番号|部品名|数量|通販アドレス|備考|
 |---|---|---|---|---|
@@ -60,10 +69,6 @@ VSYS は USB コネクタの VBUS からショットキーバリアダイオー�
 |JP1～JP4|ジャンパーピン赤(2.54mmピッチ) (25個入)|1|https://akizukidenshi.com/catalog/g/gP-03688/|
 |SW1|タクトスイッチ（黄色）|1|https://akizukidenshi.com/catalog/g/gP-03650/|
 
-
-# 回路図・ガーバーファイル
-回路図は Schematic.pdf を参照してください。  
-ガーバーファイルは 20221002.zip を参照してください。
 
 # 引用
 Raspberry Pi PICO の KiCad ライブラリは https://github.com/ncarandini/KiCad-RP-Pico を利用しています。
