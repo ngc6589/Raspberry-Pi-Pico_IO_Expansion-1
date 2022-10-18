@@ -60,15 +60,14 @@ VSYS は USB コネクタの VBUS からショットキーバリアダイオー�
 
 |部品番号|部品名|数量|通販アドレス|備考|
 |---|---|---|---|---|
-|U1, U2, J4, J5|ピンソケット (メス) 1×20 (20P)|6|https://akizukidenshi.com/catalog/g/gC-03077/||
-|U1, U2|ピンヘッダ 1×40 (40P)|2|https://akizukidenshi.com/catalog/g/gC-00167/|Pico にヘッダピン装着済みなら不要|
+|U1, U2|ピンソケット (メス) 1×20 (20P)|4|https://akizukidenshi.com/catalog/g/gC-03077/||
 |U1|ピンヘッダ 1×3 (3P) (10個入)|1|https://akizukidenshi.com/catalog/g/gC-03949/|SWD端子用|
 |U1|ピンソケット(メス) 1×3(3P)|1|https://akizukidenshi.com/catalog/g/gC-10098/|SWD端子用|
 |J1, J2, J3|ピンヘッダ 2×20 (40P)|3|https://akizukidenshi.com/catalog/g/gC-00080/|
 |JP1～JP4|ピンヘッダ 1×2 (2P) (10個入)|1|https://akizukidenshi.com/catalog/g/gC-08593/|
 |JP1～JP4|ジャンパーピン赤(2.54mmピッチ) (25個入)|1|https://akizukidenshi.com/catalog/g/gP-03688/|
 |SW1|タクトスイッチ（黄色）|1|https://akizukidenshi.com/catalog/g/gP-03650/|
-
+|J4, J5|未実装||||
 
 # 引用
 Raspberry Pi PICO の KiCad ライブラリは https://github.com/ncarandini/KiCad-RP-Pico を利用しています。
