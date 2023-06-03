@@ -91,3 +91,9 @@ Raspberry Pi PIco 無線LAN付きは3ピンデバッグ端子にヘッダピン�
 
 ## Raspberry Pi Pico WH
 ヘッダピン付き Raspberry Pi Pico HW は入手出来ていませんので写真はありませんが、Pico H 同様 JST SH コネクタでデバッグ端子に接続して下さい。
+
+# 頒布
+
+https://www.em9system.com/?p=1047
+
+にて在庫限りでピンソケット、ピンヘッダなど部品付きセットを頒布しています。
