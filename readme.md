@@ -37,7 +37,7 @@ ADC_VREF は 3V3
 
 # 回路図・ガーバーファイル
 回路図は Schematic.pdf を参照してください。  
-ガーバーファイルは 20221002.zip を参照してください。
+ガーバーファイルは KiCad フォルダーの 20230526 フォルダーを参照してください。
 
 # Pico Probe 接続
 基板端の U2 は Pico Probe の Raspberry Pi Pico が実装される場所です。gdb でデバッグをする時は実装してください。  
@@ -61,14 +61,33 @@ VSYS は USB コネクタの VBUS からショットキーバリアダイオー�
 |部品番号|部品名|数量|通販アドレス|備考|
 |---|---|---|---|---|
 |U1, U2|ピンソケット (メス) 1×20 (20P)|4|https://akizukidenshi.com/catalog/g/gC-03077/||
-|U1|ピンヘッダ 1×3 (3P) (10個入)|1|https://akizukidenshi.com/catalog/g/gC-03949/|SWD端子用|
-|U1|ピンソケット(メス) 1×3(3P)|1|https://akizukidenshi.com/catalog/g/gC-10098/|SWD端子用|
+|JP1～JP4|ピンヘッダ 1×2 (2P) (10個入)|1|https://akizukidenshi.com/catalog/g/gC-08593/||
+|U1|ピンソケット(メス) 1×3(3P)|2|https://akizukidenshi.com/catalog/g/gC-10098/||
 |J1, J2, J3|ピンヘッダ 2×20 (40P)|3|https://akizukidenshi.com/catalog/g/gC-00080/|
-|JP1～JP4|ピンヘッダ 1×2 (2P) (10個入)|1|https://akizukidenshi.com/catalog/g/gC-08593/|
 |JP1～JP4|ジャンパーピン赤(2.54mmピッチ) (25個入)|1|https://akizukidenshi.com/catalog/g/gP-03688/|
 |SW1|タクトスイッチ（黄色）|1|https://akizukidenshi.com/catalog/g/gP-03650/|
+|J6|コネクタ付コード 3P (青×3) 1mmピッチ|1|https://akizukidenshi.com/catalog/g/gC-11507/|
 |J4, J5|未実装||||
 
 # 引用
 Raspberry Pi PICO の KiCad ライブラリは https://github.com/ncarandini/KiCad-RP-Pico を利用しています。
 
+# 使用例
+
+## Raspberry Pi Pico
+Raspberry Pi PIco は3ピンデバッグ端子にヘッダピンを付けて装着して下さい。
+![expansionBoard](./Material/pico-1.jpg)
+
+## Raspberry Pi Pico H
+ヘッダピンがあらかじめ実装されている Raspberry Pi Pico H はデバッグ端子は1mm間隔のJST SHコネクタになっています。基板からSHコネクタの線を出して接続します
+
+![expansionBoard](./Material/picoH-1.jpg)
+
+
+## Raspberry Pi Pico W
+Raspberry Pi PIco 無線LAN付きは3ピンデバッグ端子にヘッダピンを付けて装着して下さい。
+
+![expansionBoard](./Material/picoW-1.jpg)
+
+## Raspberry Pi Pico WH
+ヘッダピン付き Raspberry Pi Pico HW は入手出来ていませんので写真はありませんが、Pico H 同様 JST SH コネクタでデバッグ端子に接続して下さい。
