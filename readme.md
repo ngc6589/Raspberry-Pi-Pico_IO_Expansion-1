@@ -37,7 +37,7 @@ ADC_VREF は 3V3
 
 # 回路図・ガーバーファイル
 回路図は Schematic.pdf を参照してください。  
-ガーバーファイルは KiCad フォルダーの 20230526 フォルダーを参照してください。
+ガーバーファイルは KiCad フォルダーの Gerber-20230829 フォルダーを参照してください。
 
 # Pico Probe 接続
 基板端の U2 は Pico Probe の Raspberry Pi Pico が実装される場所です。gdb でデバッグをする時は実装してください。  
@@ -53,6 +53,7 @@ VSYS は USB コネクタの VBUS からショットキーバリアダイオー�
 ![expansionBoard](./Material/expansionBoard-2.jpg)
 
 組み立て例は、Raspberry Pi Pico ボードをピンソケットで、横の I/O をピンヘッダーで出しました。
+2x5 1.27mm ピッチヘッダピンは表面実装で、J-Link SWD 接続などで使うハーフピッチのコネクタ端子です。PicoProbe だけで使うときは実装不要です。
 
 # 部品例
 
@@ -67,6 +68,7 @@ VSYS は USB コネクタの VBUS からショットキーバリアダイオー�
 |JP1～JP4|ジャンパーピン赤(2.54mmピッチ) (25個入)|1|https://akizukidenshi.com/catalog/g/gP-03688/|
 |SW1|タクトスイッチ（黄色）|1|https://akizukidenshi.com/catalog/g/gP-03650/|
 |J6|コネクタ付コード 3P (青×3) 1mmピッチ|1|https://akizukidenshi.com/catalog/g/gC-11507/|
+|J7|ピンヘッダ 2×5(10P) 表面実装用 1.27mmピッチ|1|https://akizukidenshi.com/catalog/g/gC-10904/|
 |J4, J5|未実装||||
 
 # 引用
@@ -91,6 +93,19 @@ Raspberry Pi PIco 無線LAN付きは3ピンデバッグ端子にヘッダピン�
 
 ## Raspberry Pi Pico WH
 ヘッダピン付き Raspberry Pi Pico HW は入手出来ていませんので写真はありませんが、Pico H 同様 JST SH コネクタでデバッグ端子に接続して下さい。
+
+
+
+## SWD 接続のデバッガで使用する
+
+![expansionBoard](./Material/jlink01.jpg)
+
+2x5 ヘッダピンに SWD 接続可能なデバッガのケーブルを取り付けることで、違うデバッガを使用することができます。
+
+**基板の SWD/SWCLK のジャンパは抜いてください。PicoProbe とショートしますので故障の原因となります。**
+
+この接続でも PicoProbe は USB シリアルとして使用可能ですので、Raspberry Pi Pico の puts 出力などは PicoProbe 経由で受けられます。
+
 
 # 頒布
 
