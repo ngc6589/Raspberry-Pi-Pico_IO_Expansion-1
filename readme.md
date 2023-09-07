@@ -1,7 +1,7 @@
 
 # Raspberry Pi Pico I/O Expansion Board
 
-![expansionBoard](./Material/expansionBoard.jpg)
+![expansionBoard](./Material/expansionBoard-3.jpg)
 
 
 # この基板について
@@ -50,7 +50,7 @@ VSYS は USB コネクタの VBUS からショットキーバリアダイオー�
 3V3 はターゲット Raspberry Pi Pico の 3V3 端子から供給されます。Raspberry Pi Pico の基板に 3.3V DC/DC コンバーターが搭載されていますが、Raspberry Pi Pico Datasheet の記載には、3V3 のピンは 300mA 以下推奨とあります。
 
 # 組み立て例
-![expansionBoard](./Material/expansionBoard-2.jpg)
+![expansionBoard](./Material/expansionBoard-4.jpg)
 
 組み立て例は、Raspberry Pi Pico ボードをピンソケットで、横の I/O をピンヘッダーで出しました。
 2x5 1.27mm ピッチヘッダピンは表面実装で、J-Link SWD 接続などで使うハーフピッチのコネクタ端子です。PicoProbe だけで使うときは実装不要です。
